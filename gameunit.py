@@ -1,3 +1,4 @@
+__author__ = 'student'
 # coding: utf-8
 # license: GPLv3
 
@@ -10,5 +11,7 @@ class Attacker:
         target._health -= self._attack
 
     def is_alive(self):
-        return self._health > 0
-    
+        if self._health > 0:
+            return True
+        else:
+            return False
